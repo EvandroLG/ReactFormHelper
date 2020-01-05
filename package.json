@@ -1,19 +1,44 @@
 {
-  "name": "formhelper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "formhelper",
+  "author": "Evandro Leopoldino Gonçalves",
+  "module": "dist/formhelper.esm.js",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
     "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "husky": "^3.1.0",
     "react": "^16.12.0",
-    "tslint": "^5.20.1",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-react": "^4.1.0",
+    "react-dom": "^16.12.0",
+    "tsdx": "^0.12.1",
+    "tslib": "^1.10.0",
     "typescript": "^3.7.4"
   }
 }

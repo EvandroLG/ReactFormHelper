@@ -1,17 +1,15 @@
-import {useState, useEffect} from 'react';
-
-interface HTMLInputEvent extends Event {
-  target: HTMLInputElement & EventTarget;
-};
+import {useState, useEffect, FormEvent, ChangeEvent} from 'react';
 
 interface Dict {
   [key: string]: string;
 }
 
+interface HookOutput extends Array<any> {}
+
 export default (
   validation: (values: Dict) => Dict,
   submit: (values: Dict) => void,
-) => {
+): HookOutput => {
   const [values, setValues] = useState<Dict>({});
   const [errors, setErrors] = useState<Dict>({});
 
@@ -19,16 +17,16 @@ export default (
     setErrors(validation(values));
   }, [validation, values]);
 
-  const getInputValue = (value: string) => values[value] || '';
+  const getInputValue = (value: string): string => values[value] || '';
 
-  const handleChange = (e: HTMLInputEvent): void => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setValues({
       ...values,
       [e.target.id]: e.target.value,
     });
   };
 
-  const handleSubmit = (e: Event): void => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
     setErrors(validation(values));
