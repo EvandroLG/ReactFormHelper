@@ -12,7 +12,8 @@ To install ReactFormHelper, execute:
 - Powerful and flexible hook to validate forms
 - Helper validation functions such as email and password
 
-## Doc
+## Docs
+- [useForm](https://github.com/EvandroLG/ReactFormHelper/wiki/useForm)
 - [Validators](https://github.com/EvandroLG/ReactFormHelper/wiki/Validators)
 
 ## Quickstart
