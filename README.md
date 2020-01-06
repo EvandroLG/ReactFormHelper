@@ -4,7 +4,7 @@ Simple way to build forms in React.
 ## Installation
 To install ReactFormHelper, execute:
 
-```
+```sh
   $ npm install @evandrolg/react-form-helper
 ```
 
@@ -13,7 +13,7 @@ To install ReactFormHelper, execute:
 - Helper validation functions such as email and password
 
 ## Quickstart
-```
+```js
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
