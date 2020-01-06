@@ -1,5 +1,12 @@
 {
+  "name": "ReactFormHelper",
+  "author": "evandrolg",
+  "module": "dist/formhelper.esm.js",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvandroLG/ReactFormHelper"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -27,9 +34,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ReactFormHelper",
-  "author": "Evandro Leopoldino Gonçalves",
-  "module": "dist/formhelper.esm.js",
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "@types/react": "^16.9.17",
