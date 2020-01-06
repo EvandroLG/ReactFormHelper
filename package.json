@@ -1,5 +1,5 @@
 {
-  "name": "ReactFormHelper",
+  "name": "@evandrolg/react-form-helper",
   "author": "evandrolg",
   "module": "dist/formhelper.esm.js",
   "version": "0.1.0",
