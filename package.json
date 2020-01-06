@@ -1,8 +1,8 @@
 {
   "name": "@evandrolg/react-form-helper",
   "author": "evandrolg",
-  "module": "dist/formhelper.esm.js",
-  "version": "0.1.0",
+  "module": "dist/react-form-helper.esm.js",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/EvandroLG/ReactFormHelper"
