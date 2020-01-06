@@ -27,7 +27,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "formhelper",
+  "name": "ReactFormHelper",
   "author": "Evandro Leopoldino Gonçalves",
   "module": "dist/formhelper.esm.js",
   "devDependencies": {
