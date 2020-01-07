@@ -1,9 +1,4 @@
-import {
-  isEmailValid,
-  isConfirmValid,
-  isPasswordValid,
-  isBlank,
-} from '../src/validators';
+import { isEmailValid, isConfirmValid, isPasswordValid, isBlank } from '../src';
 
 describe('validators', () => {
   it('isEmailValid should return true if email is valid', () => {
