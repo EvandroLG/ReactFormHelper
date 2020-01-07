@@ -1,5 +1,6 @@
 # ReactFormHelper
 Simple way to build forms in React.
+
 [![Build Status](https://travis-ci.org/EvandroLG/ReactFormHelper.svg?branch=master)](https://travis-ci.org/EvandroLG/ReactFormHelper)
 [![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
 
