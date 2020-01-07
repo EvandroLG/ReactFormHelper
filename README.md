@@ -24,7 +24,7 @@ To install ReactFormHelper, execute:
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  useForm
+  useForm,
   isEmailValid,
   isPasswordValid,
 } from '@evandrolg/react-form-helper';
