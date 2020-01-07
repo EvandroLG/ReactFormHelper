@@ -5,6 +5,6 @@ import {
   isConfirmValid,
   isPasswordValid,
   isBlank,
-} from './validations';
+} from './validators';
 
 export { useForm, isEmailValid, isConfirmValid, isPasswordValid, isBlank };
