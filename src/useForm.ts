@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-interface Dict {
+export interface IDict {
   [key: string]: string;
 }
 
 export default (
-  validation: (values: Dict) => Dict,
-  submit: (values: Dict) => void
-): Array<any> => {
-  const [values, setValues] = useState<Dict>({});
-  const [errors, setErrors] = useState<Dict>({});
+  validation: (values: IDict) => any,
+  submit: (values: IDict) => void
+): any[] => {
+  const [values, setValues] = useState<IDict>({});
+  const [errors, setErrors] = useState<IDict>({});
 
   useEffect(() => {
     setErrors(validation(values));
