@@ -1,2 +1,2 @@
-export { default as useForm } from './useForm';
+export { default as useForm, IDict } from './useForm';
 export * from './validators';
